@@ -40,8 +40,6 @@ def main():
         print (a,"/",b, "=",division(a,b))
     else:
         print "Operacion no valida"
-     
-    again()
 
 def again():
     print "precione Y para vorver a inicio N para salir"

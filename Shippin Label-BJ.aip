@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="13.1" version="13.1" Modules="simple" RootPath="." Language="en" Id="{ABE53446-AF9D-4CE1-B8FB-2D07C10CF984}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="ShippingLabel_ic_material_product_icon_192pxcopy.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="Encore"/>
+    <ROW Property="ProductCode" Value="1033:{902E5624-1FDE-4A61-A251-591051E3CD85} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Shipping Label-BJ"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1BE2654C-6201-43D2-925C-0323709A5886}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Debug_Dir" Directory_Parent="APPDIR" DefaultDir="Debug"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="JavaScriptEvents_files_Dir" Directory_Parent="Resources_Dir" DefaultDir="JAVASC~1|JavaScript Events_files"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="Debug_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="app.publish_Dir" Directory_Parent="Debug_Dir" DefaultDir="APP~1.PUB|app.publish"/>
+    <ROW Directory="deviceinfo_1_Dir" Directory_Parent="deviceinfo_Dir" DefaultDir="DEVICE~1|deviceinfo"/>
+    <ROW Directory="deviceinfo_Dir" Directory_Parent="Resources_Dir" DefaultDir="DEVICE~1|deviceinfo"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{C10BDFAF-66A4-4A29-AE80-1829012EDF5B}" Directory_="Debug_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{E04D13D7-C60B-4D61-B0DD-9A949EE5CE90}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="_computerdevicesresponsive.ico" ComponentId="{917008B8-A138-4493-A474-A37C40A61AC5}" Directory_="Resources_Dir" Attributes="0" KeyPath="_computerdevicesresponsive.ico" Type="0"/>
+    <ROW Component="analytics.js" ComponentId="{A490FA47-4580-4E0F-939C-4AA65FD6E52A}" Directory_="JavaScriptEvents_files_Dir" Attributes="0" KeyPath="analytics.js" Type="0"/>
+    <ROW Component="bbmpTools.application" ComponentId="{75072C9D-263B-4D17-BD8F-A75E2F3EED72}" Directory_="Debug_Dir" Attributes="0" KeyPath="bbmpTools.application" Type="0"/>
+    <ROW Component="bbmpTools.exe" ComponentId="{C886A7B7-8F22-4DFC-9920-567F58047E6B}" Directory_="app.publish_Dir" Attributes="0" KeyPath="bbmpTools.exe"/>
+    <ROW Component="bbmpTools.exe_1" ComponentId="{6DA15408-EA1F-4033-9373-927870F93183}" Directory_="Debug_Dir" Attributes="0" KeyPath="bbmpTools.exe_1"/>
+    <ROW Component="bbmpTools.vshost.exe" ComponentId="{0E71FCFF-AEAB-4522-B8E5-2619E5700AC3}" Directory_="Debug_Dir" Attributes="0" KeyPath="bbmpTools.vshost.exe"/>
+    <ROW Component="cygcrypto1.0.0.dll" ComponentId="{B0504AFF-52E4-430E-9385-5ACE8E723632}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygcrypto1.0.0.dll"/>
+    <ROW Component="cygcrypto1.0.0.dll_1" ComponentId="{2D3181BA-2CCD-48A3-A368-B5D05E4D5CD7}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygcrypto1.0.0.dll_1"/>
+    <ROW Component="cyggcc_s1.dll" ComponentId="{92F005B8-79B8-49E5-A443-BD1ED4BEED6A}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cyggcc_s1.dll"/>
+    <ROW Component="cyggcc_s1.dll_1" ComponentId="{65C7DF17-5AD2-4EE9-A369-9497DBFEF663}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cyggcc_s1.dll_1"/>
+    <ROW Component="cygiconv2.dll" ComponentId="{DA4ECF91-081C-418C-B3BE-913A77CE3338}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygiconv2.dll"/>
+    <ROW Component="cygiconv2.dll_1" ComponentId="{066D8FD6-8049-4AE0-A6BC-DBBFE8040E55}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygiconv2.dll_1"/>
+    <ROW Component="cygimobiledevice.dll" ComponentId="{12F568D4-D4A5-4000-AAD9-F2BD5E93027A}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygimobiledevice.dll"/>
+    <ROW Component="cygimobiledevice.dll_1" ComponentId="{94F520D3-1F01-43AA-93E2-2A066B192702}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygimobiledevice.dll_1"/>
+    <ROW Component="cyglzma5.dll" ComponentId="{A331E1CE-8698-4343-AC70-3AC206A39E40}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cyglzma5.dll"/>
+    <ROW Component="cyglzma5.dll_1" ComponentId="{E1778506-C1C2-484A-866A-D01CA1EDBB2D}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cyglzma5.dll_1"/>
+    <ROW Component="cygplist.dll" ComponentId="{462720AF-9392-4536-86E3-F0AE5BE34DCD}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygplist.dll"/>
+    <ROW Component="cygplist.dll_1" ComponentId="{9ACDAEA3-6E54-4F73-BC9A-3FB0985DD0B1}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygplist.dll_1"/>
+    <ROW Component="cygplist.dll_2" ComponentId="{63D4AC4C-E374-4E62-A251-84924C951800}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygplist.dll_2"/>
+    <ROW Component="cygplist.dll_3" ComponentId="{58AE9EB6-8A8B-4D1B-B04B-B5FCFE845C90}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygplist.dll_3"/>
+    <ROW Component="cygplist3.dll" ComponentId="{4C5028EC-0AFB-46CF-80D2-A4D8116C64A2}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygplist3.dll"/>
+    <ROW Component="cygplist3.dll_1" ComponentId="{184EA765-B872-4421-B061-F2EBC318803A}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygplist3.dll_1"/>
+    <ROW Component="cygssl1.0.0.dll" ComponentId="{B802E9D8-CF2D-4759-BE65-2A15253757D5}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygssl1.0.0.dll"/>
+    <ROW Component="cygssl1.0.0.dll_1" ComponentId="{9DB3B48A-2F6B-476D-A8E3-678FDEE44496}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygssl1.0.0.dll_1"/>
+    <ROW Component="cygusbmuxd.dll" ComponentId="{B3FE4DE6-05D5-47BC-873D-B5ED5377004D}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygusbmuxd.dll"/>
+    <ROW Component="cygusbmuxd.dll_1" ComponentId="{D2D8E736-C8FD-4B38-81B0-701444C01E21}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygusbmuxd.dll_1"/>
+    <ROW Component="cygwin1.dll" ComponentId="{F1CA552B-3AF0-4455-A804-FDF95CEAF386}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygwin1.dll"/>
+    <ROW Component="cygwin1.dll_1" ComponentId="{7ADF437C-B668-4038-9914-6388DCB0420E}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygwin1.dll_1"/>
+    <ROW Component="cygxml22.dll" ComponentId="{16A74BC1-33FF-4EE9-AEE7-AEE28F70B4A8}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygxml22.dll"/>
+    <ROW Component="cygxml22.dll_1" ComponentId="{2DA2909D-709C-4C90-8AEE-30731F8FAE22}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygxml22.dll_1"/>
+    <ROW Component="cygz.dll" ComponentId="{5402ED96-EC7B-48C4-89D2-D12FC1B47A93}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="cygz.dll"/>
+    <ROW Component="cygz.dll_1" ComponentId="{97FFE3FB-AFB0-4682-A5F2-006AD1F9FE5F}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="cygz.dll_1"/>
+    <ROW Component="execute.bat" ComponentId="{A515F311-6306-4676-9CF5-D3F3D8EE7FD5}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="execute.bat" Type="0"/>
+    <ROW Component="execute.bat_1" ComponentId="{32FC5AEE-9385-42C4-8962-E243A42CF377}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="execute.bat_1" Type="0"/>
+    <ROW Component="idevice_id.exe" ComponentId="{0FE57F5D-B3C4-4128-B656-FB07066F0B34}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevice_id.exe"/>
+    <ROW Component="idevice_id.exe_1" ComponentId="{0504F388-FF57-4F4D-AF7D-9085A61710A7}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevice_id.exe_1"/>
+    <ROW Component="idevicebackup.exe" ComponentId="{DE5B5316-9558-4111-B4EB-9745CF325C71}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicebackup.exe"/>
+    <ROW Component="idevicebackup.exe_1" ComponentId="{5780491A-3CF0-4474-9500-C6373866205F}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicebackup.exe_1"/>
+    <ROW Component="idevicebackup2.exe" ComponentId="{46EFA244-E7C1-45F1-8B9A-E46FD58F0EDD}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicebackup2.exe"/>
+    <ROW Component="idevicebackup2.exe_1" ComponentId="{4C6B0944-AFB3-44ED-9B46-9F025F19AEE3}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicebackup2.exe_1"/>
+    <ROW Component="idevicecrashreport.exe" ComponentId="{52776D82-20F0-454F-97EA-40660665C805}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicecrashreport.exe"/>
+    <ROW Component="idevicecrashreport.exe_1" ComponentId="{A4A2BD3F-6B36-4CD9-98E7-DE6D4C6BE852}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicecrashreport.exe_1"/>
+    <ROW Component="idevicedate.exe" ComponentId="{B892D850-A2CF-4E0E-9DEF-5FBF3D83C1C6}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicedate.exe"/>
+    <ROW Component="idevicedate.exe_1" ComponentId="{52D3D30F-CC77-4EA0-B821-923D94B1B49C}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicedate.exe_1"/>
+    <ROW Component="idevicedebug.exe" ComponentId="{7B0BC645-BCFE-42C7-B6CA-6B9EE731DCE8}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicedebug.exe"/>
+    <ROW Component="idevicedebug.exe_1" ComponentId="{3CD92329-FCFF-40D8-8D86-AE4962027179}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicedebug.exe_1"/>
+    <ROW Component="idevicedebugserverproxy.exe" ComponentId="{932EFD56-A848-4437-8892-FEED5A80A8A4}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicedebugserverproxy.exe"/>
+    <ROW Component="idevicedebugserverproxy.exe_1" ComponentId="{AE9D3389-8AEB-4DE6-B3B1-EC5070A621AE}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicedebugserverproxy.exe_1"/>
+    <ROW Component="idevicediagnostics.exe" ComponentId="{2DDC51C6-3BB6-4420-BE54-22C15073263E}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicediagnostics.exe"/>
+    <ROW Component="idevicediagnostics.exe_1" ComponentId="{51CF709C-9F78-47E7-9AC2-DFC490D905F5}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicediagnostics.exe_1"/>
+    <ROW Component="ideviceenterrecovery.exe" ComponentId="{6112E3FD-A0DE-4CF0-80FD-EFCC146A8B96}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="ideviceenterrecovery.exe"/>
+    <ROW Component="ideviceenterrecovery.exe_1" ComponentId="{0C932C81-47D9-4187-A2C7-29F6F0F37CD7}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="ideviceenterrecovery.exe_1"/>
+    <ROW Component="ideviceimagemounter.exe" ComponentId="{F26E09C1-B1C3-4406-930E-6313327B4126}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="ideviceimagemounter.exe"/>
+    <ROW Component="ideviceimagemounter.exe_1" ComponentId="{60A522A7-FB69-47D0-9495-98A9A7ECDDEB}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="ideviceimagemounter.exe_1"/>
+    <ROW Component="ideviceinfo.exe" ComponentId="{3EECA24D-F850-4E57-B176-8367FBDC3869}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="ideviceinfo.exe"/>
+    <ROW Component="ideviceinfo.exe_1" ComponentId="{E274ED75-4D25-4A28-B5CB-BFB72FC8647A}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="ideviceinfo.exe_1"/>
+    <ROW Component="idevicename.exe" ComponentId="{896AEB29-25AF-42A7-970A-AC173A0F6293}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicename.exe"/>
+    <ROW Component="idevicename.exe_1" ComponentId="{19CC8344-8558-4861-AD46-EE33810BBF67}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicename.exe_1"/>
+    <ROW Component="idevicenotificationproxy.exe" ComponentId="{84F72C97-7291-4A17-AB11-79159D43AD64}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicenotificationproxy.exe"/>
+    <ROW Component="idevicenotificationproxy.exe_1" ComponentId="{7B4D85A4-8CF7-4EED-A220-CFF32778BF3F}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicenotificationproxy.exe_1"/>
+    <ROW Component="idevicepair.exe" ComponentId="{A61BC989-D279-4219-980F-68E27E609B1F}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicepair.exe"/>
+    <ROW Component="idevicepair.exe_1" ComponentId="{A8BEB8C8-3945-456D-AEF3-F71B5A53A982}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicepair.exe_1"/>
+    <ROW Component="ideviceprovision.exe" ComponentId="{C90B2E03-BE63-4B88-961E-48B6E799C98F}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="ideviceprovision.exe"/>
+    <ROW Component="ideviceprovision.exe_1" ComponentId="{163A421A-C3CE-4E09-995D-0902AAD57F7C}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="ideviceprovision.exe_1"/>
+    <ROW Component="idevicescreenshot.exe" ComponentId="{6E753E16-7C15-40E6-BA2B-A0FA95856E35}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicescreenshot.exe"/>
+    <ROW Component="idevicescreenshot.exe_1" ComponentId="{134D3FBA-8DD3-4352-AE42-70914089B6AB}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicescreenshot.exe_1"/>
+    <ROW Component="idevicesyslog.exe" ComponentId="{A2A3090D-BC4B-4F9D-BC34-E7A5D2CEC8D6}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="idevicesyslog.exe"/>
+    <ROW Component="idevicesyslog.exe_1" ComponentId="{197361CA-13FF-4231-88FC-89C192897EA6}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="idevicesyslog.exe_1"/>
+    <ROW Component="iproxy.exe" ComponentId="{E056035D-8130-4365-A2BC-260BFB8DFEDB}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="iproxy.exe"/>
+    <ROW Component="iproxy.exe_1" ComponentId="{CC34BA98-242E-4219-9B2F-3561249CD596}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="iproxy.exe_1"/>
+    <ROW Component="plistutil.exe" ComponentId="{78C9E8C5-C2A5-45C8-A600-7F92040FCE7C}" Directory_="deviceinfo_1_Dir" Attributes="0" KeyPath="plistutil.exe"/>
+    <ROW Component="plistutil.exe_1" ComponentId="{878A592B-040F-4952-9883-6F20654DD482}" Directory_="deviceinfo_Dir" Attributes="0" KeyPath="plistutil.exe_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Newtonsoft.Json.dll ProductInformation _computerdevicesresponsive.ico analytics.js bbmpTools.application bbmpTools.exe bbmpTools.exe_1 bbmpTools.vshost.exe cygcrypto1.0.0.dll cygcrypto1.0.0.dll_1 cyggcc_s1.dll cyggcc_s1.dll_1 cygiconv2.dll cygiconv2.dll_1 cygimobiledevice.dll cygimobiledevice.dll_1 cyglzma5.dll cyglzma5.dll_1 cygplist.dll cygplist.dll_1 cygplist.dll_2 cygplist.dll_3 cygplist3.dll cygplist3.dll_1 cygssl1.0.0.dll cygssl1.0.0.dll_1 cygusbmuxd.dll cygusbmuxd.dll_1 cygwin1.dll cygwin1.dll_1 cygxml22.dll cygxml22.dll_1 cygz.dll cygz.dll_1 execute.bat execute.bat_1 idevice_id.exe idevice_id.exe_1 idevicebackup.exe idevicebackup.exe_1 idevicebackup2.exe idevicebackup2.exe_1 idevicecrashreport.exe idevicecrashreport.exe_1 idevicedate.exe idevicedate.exe_1 idevicedebug.exe idevicedebug.exe_1 idevicedebugserverproxy.exe idevicedebugserverproxy.exe_1 idevicediagnostics.exe idevicediagnostics.exe_1 ideviceenterrecovery.exe ideviceenterrecovery.exe_1 ideviceimagemounter.exe ideviceimagemounter.exe_1 ideviceinfo.exe ideviceinfo.exe_1 idevicename.exe idevicename.exe_1 idevicenotificationproxy.exe idevicenotificationproxy.exe_1 idevicepair.exe idevicepair.exe_1 ideviceprovision.exe ideviceprovision.exe_1 idevicescreenshot.exe idevicescreenshot.exe_1 idevicesyslog.exe idevicesyslog.exe_1 iproxy.exe iproxy.exe_1 plistutil.exe plistutil.exe_1"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BBMP.png" Component_="_computerdevicesresponsive.ico" FileName="BBMP.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\BBMP.png" SelfReg="false" NextFile="BLUEmin.png"/>
+    <ROW File="BBMPmin.png" Component_="_computerdevicesresponsive.ico" FileName="BBMP-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\BBMP-min.png" SelfReg="false" NextFile="BBMP.png"/>
+    <ROW File="BLUE.png" Component_="_computerdevicesresponsive.ico" FileName="BLUE.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\BLUE.png" SelfReg="false" NextFile="CANCEL01.png"/>
+    <ROW File="BLUEmin.png" Component_="_computerdevicesresponsive.ico" FileName="BLUE-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\BLUE-min.png" SelfReg="false" NextFile="BLUE.png"/>
+    <ROW File="CANCEL01.png" Component_="_computerdevicesresponsive.ico" FileName="CANCEL~1.PNG|CANCEL-01.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\CANCEL-01.png" SelfReg="false" NextFile="Capturadepantalla20160108alas12.25.30PMmin.png"/>
+    <ROW File="Capturadepantalla20160108alas12.25.30PM.png" Component_="_computerdevicesresponsive.ico" FileName="CAPTUR~2.PNG|Captura de pantalla 2016-01-08 a las 12.25.30 PM.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\Captura de pantalla 2016-01-08 a las 12.25.30 PM.png" SelfReg="false" NextFile="cygcrypto1.0.0.dll"/>
+    <ROW File="Capturadepantalla20160108alas12.25.30PMmin.png" Component_="_computerdevicesresponsive.ico" FileName="CAPTUR~1.PNG|Captura de pantalla 2016-01-08 a las 12.25.30 PM-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\Captura de pantalla 2016-01-08 a las 12.25.30 PM-min.png" SelfReg="false" NextFile="Capturadepantalla20160108alas12.25.30PM.png"/>
+    <ROW File="EncoreLogo.png" Component_="_computerdevicesresponsive.ico" FileName="ENCORE~1.PNG|Encore-Logo.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\Encore-Logo.png" SelfReg="false" NextFile="Flag_of_the_Dominican_Republic.svg.png"/>
+    <ROW File="Flag_of_the_Dominican_Republic.svg.png" Component_="_computerdevicesresponsive.ico" FileName="FLAG_O~1.PNG|Flag_of_the_Dominican_Republic.svg.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\Flag_of_the_Dominican_Republic.svg.png" SelfReg="false" NextFile="homekeymin.png"/>
+    <ROW File="JavaScriptEvents.html" Component_="_computerdevicesresponsive.ico" FileName="JAVASC~1.HTM|JavaScript Events.html" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events.html" SelfReg="false" NextFile="analytics.js"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="shipping label c#\Debug\Newtonsoft.Json.dll" SelfReg="false" NextFile="Newtonsoft.Json.xml"/>
+    <ROW File="Newtonsoft.Json.xml" Component_="bbmpTools.application" FileName="NEWTON~1.XML|Newtonsoft.Json.xml" Attributes="0" SourcePath="shipping label c#\Debug\Newtonsoft.Json.xml" SelfReg="false" NextFile="_computerdevicesresponsive.ico"/>
+    <ROW File="OK01.png" Component_="_computerdevicesresponsive.ico" FileName="OK-01.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\OK-01.png" SelfReg="false" NextFile="passmin.png"/>
+    <ROW File="SCRAP.png" Component_="_computerdevicesresponsive.ico" FileName="SCRAP.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\SCRAP.png" SelfReg="false" NextFile="ShippingLabel_ic_material_product_icon_192pxcopy.ico"/>
+    <ROW File="SCRAPmin.png" Component_="_computerdevicesresponsive.ico" FileName="SCRAP-~1.PNG|SCRAP-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\SCRAP-min.png" SelfReg="false" NextFile="SCRAP.png"/>
+    <ROW File="ShippingLabel_ic_material_product_icon_192pxcopy.ico" Component_="_computerdevicesresponsive.ico" FileName="SHIPPI~1.ICO|Shipping Label_ic_material_product_icon_192px copy.ico" Attributes="0" SourcePath="shipping label c#\Debug\Resources\Shipping Label_ic_material_product_icon_192px copy.ico" SelfReg="false" NextFile="vertialLine.png"/>
+    <ROW File="_computerdevicesresponsive.ico" Component_="_computerdevicesresponsive.ico" FileName="145204~1.ICO|1452048204_computer-devices-responsive.ico" Attributes="0" SourcePath="shipping label c#\Debug\Resources\1452048204_computer-devices-responsive.ico" SelfReg="false" NextFile="_computerdevicesresponsive1.ico"/>
+    <ROW File="_computerdevicesresponsive1.ico" Component_="_computerdevicesresponsive.ico" FileName="145204~2.ICO|1452048204_computer-devices-responsive1.ico" Attributes="0" SourcePath="shipping label c#\Debug\Resources\1452048204_computer-devices-responsive1.ico" SelfReg="false" NextFile="_print.png"/>
+    <ROW File="_print.png" Component_="_computerdevicesresponsive.ico" FileName="145523~1.PNG|1455238478_print.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\1455238478_print.png" SelfReg="false" NextFile="arrowLeftmin.png"/>
+    <ROW File="analytics.js" Component_="analytics.js" FileName="ANALYT~1.JS|analytics.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\analytics.js" SelfReg="false" NextFile="asyncads.js"/>
+    <ROW File="arrowLeft.png" Component_="_computerdevicesresponsive.ico" FileName="ARROWL~2.PNG|arrowLeft.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\arrowLeft.png" SelfReg="false" NextFile="arrowRightmin.png"/>
+    <ROW File="arrowLeftmin.png" Component_="_computerdevicesresponsive.ico" FileName="ARROWL~1.PNG|arrowLeft-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\arrowLeft-min.png" SelfReg="false" NextFile="arrowLeft.png"/>
+    <ROW File="arrowRight.png" Component_="_computerdevicesresponsive.ico" FileName="ARROWR~2.PNG|arrowRight.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\arrowRight.png" SelfReg="false" NextFile="back_iphone6min.png"/>
+    <ROW File="arrowRightmin.png" Component_="_computerdevicesresponsive.ico" FileName="ARROWR~1.PNG|arrowRight-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\arrowRight-min.png" SelfReg="false" NextFile="arrowRight.png"/>
+    <ROW File="asyncads.js" Component_="analytics.js" FileName="ASYNC-~1.JS|async-ads.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\async-ads.js" SelfReg="false" NextFile="colorpicker.gif"/>
+    <ROW File="back_iphone6.png" Component_="_computerdevicesresponsive.ico" FileName="BACK_I~2.PNG|back_iphone6.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\back_iphone6.png" SelfReg="false" NextFile="BBMPmin.png"/>
+    <ROW File="back_iphone6min.png" Component_="_computerdevicesresponsive.ico" FileName="BACK_I~1.PNG|back_iphone6-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\back_iphone6-min.png" SelfReg="false" NextFile="back_iphone6.png"/>
+    <ROW File="bbmpTools.application" Component_="bbmpTools.application" FileName="BBMPTO~1.APP|bbmpTools.application" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.application" SelfReg="false" NextFile="bbmpTools.exe_1"/>
+    <ROW File="bbmpTools.exe" Component_="bbmpTools.exe" FileName="BBMPTO~1.EXE|bbmpTools.exe" Attributes="0" SourcePath="shipping label c#\Debug\app.publish\bbmpTools.exe" SelfReg="false" NextFile="bbmpTools.application" DigSign="true"/>
+    <ROW File="bbmpTools.exe.config" Component_="bbmpTools.application" FileName="BBMPTO~1.CON|bbmpTools.exe.config" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.exe.config" SelfReg="false" NextFile="bbmpTools.exe.manifest"/>
+    <ROW File="bbmpTools.exe.manifest" Component_="bbmpTools.application" FileName="BBMPTO~1.MAN|bbmpTools.exe.manifest" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.exe.manifest" SelfReg="false" NextFile="bbmpTools.pdb"/>
+    <ROW File="bbmpTools.exe_1" Component_="bbmpTools.exe_1" FileName="BBMPTO~1.EXE|bbmpTools.exe" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.exe" SelfReg="false" NextFile="bbmpTools.exe.config" DigSign="true"/>
+    <ROW File="bbmpTools.pdb" Component_="bbmpTools.exe_1" FileName="BBMPTO~1.PDB|bbmpTools.pdb" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.pdb" SelfReg="false" NextFile="bbmpTools.vshost.application"/>
+    <ROW File="bbmpTools.vshost.application" Component_="bbmpTools.application" FileName="BBMPTO~2.APP|bbmpTools.vshost.application" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.vshost.application" SelfReg="false" NextFile="bbmpTools.vshost.exe"/>
+    <ROW File="bbmpTools.vshost.exe" Component_="bbmpTools.vshost.exe" FileName="BBMPTO~2.EXE|bbmpTools.vshost.exe" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.vshost.exe" SelfReg="false" NextFile="bbmpTools.vshost.exe.config" DigSign="true"/>
+    <ROW File="bbmpTools.vshost.exe.config" Component_="bbmpTools.application" FileName="BBMPTO~2.CON|bbmpTools.vshost.exe.config" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.vshost.exe.config" SelfReg="false" NextFile="bbmpTools.vshost.exe.manifest"/>
+    <ROW File="bbmpTools.vshost.exe.manifest" Component_="bbmpTools.application" FileName="BBMPTO~2.MAN|bbmpTools.vshost.exe.manifest" Attributes="0" SourcePath="shipping label c#\Debug\bbmpTools.vshost.exe.manifest" SelfReg="false" NextFile="labelBlueJays.txt"/>
+    <ROW File="colorpicker.gif" Component_="analytics.js" FileName="COLORP~1.GIF|colorpicker.gif" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\colorpicker.gif" SelfReg="false" NextFile="container.html"/>
+    <ROW File="container.html" Component_="analytics.js" FileName="CONTAI~1.HTM|container.html" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\container.html" SelfReg="false" NextFile="cse.js"/>
+    <ROW File="cse.js" Component_="analytics.js" FileName="cse.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\cse.js" SelfReg="false" NextFile="defaulten.css"/>
+    <ROW File="cygcrypto1.0.0.dll" Component_="cygcrypto1.0.0.dll" FileName="CYGCRY~1.DLL|cygcrypto-1.0.0.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygcrypto-1.0.0.dll" SelfReg="false" NextFile="cyggcc_s1.dll"/>
+    <ROW File="cygcrypto1.0.0.dll_1" Component_="cygcrypto1.0.0.dll_1" FileName="CYGCRY~1.DLL|cygcrypto-1.0.0.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygcrypto-1.0.0.dll" SelfReg="false" NextFile="cyggcc_s1.dll_1"/>
+    <ROW File="cyggcc_s1.dll" Component_="cyggcc_s1.dll" FileName="CYGGCC~1.DLL|cyggcc_s-1.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cyggcc_s-1.dll" SelfReg="false" NextFile="cygiconv2.dll"/>
+    <ROW File="cyggcc_s1.dll_1" Component_="cyggcc_s1.dll_1" FileName="CYGGCC~1.DLL|cyggcc_s-1.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cyggcc_s-1.dll" SelfReg="false" NextFile="cygiconv2.dll_1"/>
+    <ROW File="cygiconv2.dll" Component_="cygiconv2.dll" FileName="CYGICO~1.DLL|cygiconv-2.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygiconv-2.dll" SelfReg="false" NextFile="cygimobiledevice.dll"/>
+    <ROW File="cygiconv2.dll_1" Component_="cygiconv2.dll_1" FileName="CYGICO~1.DLL|cygiconv-2.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygiconv-2.dll" SelfReg="false" NextFile="cygimobiledevice.dll_1"/>
+    <ROW File="cygimobiledevice.dll" Component_="cygimobiledevice.dll" FileName="CYGIMO~1.DLL|cygimobiledevice.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygimobiledevice.dll" SelfReg="false" NextFile="cyglzma5.dll"/>
+    <ROW File="cygimobiledevice.dll_1" Component_="cygimobiledevice.dll_1" FileName="CYGIMO~1.DLL|cygimobiledevice.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygimobiledevice.dll" SelfReg="false" NextFile="cyglzma5.dll_1"/>
+    <ROW File="cyglzma5.dll" Component_="cyglzma5.dll" FileName="CYGLZM~1.DLL|cyglzma-5.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cyglzma-5.dll" SelfReg="false" NextFile="cygplist3.dll"/>
+    <ROW File="cyglzma5.dll_1" Component_="cyglzma5.dll_1" FileName="CYGLZM~1.DLL|cyglzma-5.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cyglzma-5.dll" SelfReg="false" NextFile="cygplist3.dll_1"/>
+    <ROW File="cygplist.dll" Component_="cygplist.dll" FileName="CYGPLI~2.DLL|cygplist++.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygplist++.dll" SelfReg="false" NextFile="cygplist.dll_1"/>
+    <ROW File="cygplist.dll_1" Component_="cygplist.dll_1" FileName="cygplist.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygplist.dll" SelfReg="false" NextFile="cygssl1.0.0.dll"/>
+    <ROW File="cygplist.dll_2" Component_="cygplist.dll_2" FileName="CYGPLI~2.DLL|cygplist++.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygplist++.dll" SelfReg="false" NextFile="cygplist.dll_3"/>
+    <ROW File="cygplist.dll_3" Component_="cygplist.dll_3" FileName="cygplist.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygplist.dll" SelfReg="false" NextFile="cygssl1.0.0.dll_1"/>
+    <ROW File="cygplist3.dll" Component_="cygplist3.dll" FileName="CYGPLI~1.DLL|cygplist++-3.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygplist++-3.dll" SelfReg="false" NextFile="cygplist.dll"/>
+    <ROW File="cygplist3.dll_1" Component_="cygplist3.dll_1" FileName="CYGPLI~1.DLL|cygplist++-3.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygplist++-3.dll" SelfReg="false" NextFile="cygplist.dll_2"/>
+    <ROW File="cygssl1.0.0.dll" Component_="cygssl1.0.0.dll" FileName="CYGSSL~1.DLL|cygssl-1.0.0.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygssl-1.0.0.dll" SelfReg="false" NextFile="cygusbmuxd.dll"/>
+    <ROW File="cygssl1.0.0.dll_1" Component_="cygssl1.0.0.dll_1" FileName="CYGSSL~1.DLL|cygssl-1.0.0.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygssl-1.0.0.dll" SelfReg="false" NextFile="cygusbmuxd.dll_1"/>
+    <ROW File="cygusbmuxd.dll" Component_="cygusbmuxd.dll" FileName="CYGUSB~1.DLL|cygusbmuxd.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygusbmuxd.dll" SelfReg="false" NextFile="cygwin1.dll"/>
+    <ROW File="cygusbmuxd.dll_1" Component_="cygusbmuxd.dll_1" FileName="CYGUSB~1.DLL|cygusbmuxd.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygusbmuxd.dll" SelfReg="false" NextFile="cygwin1.dll_1"/>
+    <ROW File="cygwin1.dll" Component_="cygwin1.dll" FileName="cygwin1.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygwin1.dll" SelfReg="false" NextFile="cygxml22.dll"/>
+    <ROW File="cygwin1.dll_1" Component_="cygwin1.dll_1" FileName="cygwin1.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygwin1.dll" SelfReg="false" NextFile="cygxml22.dll_1"/>
+    <ROW File="cygxml22.dll" Component_="cygxml22.dll" FileName="CYGXML~1.DLL|cygxml2-2.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygxml2-2.dll" SelfReg="false" NextFile="cygz.dll"/>
+    <ROW File="cygxml22.dll_1" Component_="cygxml22.dll_1" FileName="CYGXML~1.DLL|cygxml2-2.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygxml2-2.dll" SelfReg="false" NextFile="cygz.dll_1"/>
+    <ROW File="cygz.dll" Component_="cygz.dll" FileName="cygz.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\cygz.dll" SelfReg="false" NextFile="cygcrypto1.0.0.dll_1"/>
+    <ROW File="cygz.dll_1" Component_="cygz.dll_1" FileName="cygz.dll" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\cygz.dll" SelfReg="false" NextFile="execute.bat"/>
+    <ROW File="default.css" Component_="analytics.js" FileName="default.css" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\default.css" SelfReg="false" NextFile="gpt.js"/>
+    <ROW File="defaulten.I.js" Component_="analytics.js" FileName="DEFAUL~1.JS|default+en.I.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\default+en.I.js" SelfReg="false" NextFile="default.css"/>
+    <ROW File="defaulten.css" Component_="analytics.js" FileName="DEFAUL~1.CSS|default+en.css" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\default+en.css" SelfReg="false" NextFile="defaulten.I.js"/>
+    <ROW File="execute.bat" Component_="execute.bat" FileName="execute.bat" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\execute.bat" SelfReg="false" NextFile="idevicebackup.exe"/>
+    <ROW File="execute.bat_1" Component_="execute.bat_1" FileName="execute.bat" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\execute.bat" SelfReg="false" NextFile="idevicebackup.exe_1"/>
+    <ROW File="gpt.js" Component_="analytics.js" FileName="gpt.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\gpt.js" SelfReg="false" NextFile="html.html"/>
+    <ROW File="home_key.png" Component_="_computerdevicesresponsive.ico" FileName="home_key.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\home_key.png" SelfReg="false" NextFile="horizontalLinemin.PNG"/>
+    <ROW File="home_keymin.png" Component_="_computerdevicesresponsive.ico" FileName="HOME_K~1.PNG|home_key-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\home_key-min.png" SelfReg="false" NextFile="home_key.png"/>
+    <ROW File="homekey.png" Component_="_computerdevicesresponsive.ico" FileName="homekey.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\homekey.png" SelfReg="false" NextFile="home_keymin.png"/>
+    <ROW File="homekeymin.png" Component_="_computerdevicesresponsive.ico" FileName="HOMEKE~1.PNG|homekey-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\homekey-min.png" SelfReg="false" NextFile="homekey.png"/>
+    <ROW File="horizontalLine.PNG" Component_="_computerdevicesresponsive.ico" FileName="HORIZO~2.PNG|horizontalLine.PNG" Attributes="0" SourcePath="shipping label c#\Debug\Resources\horizontalLine.PNG" SelfReg="false" NextFile="ic_check_black_48dp_2xmin.png"/>
+    <ROW File="horizontalLinemin.PNG" Component_="_computerdevicesresponsive.ico" FileName="HORIZO~1.PNG|horizontalLine-min.PNG" Attributes="0" SourcePath="shipping label c#\Debug\Resources\horizontalLine-min.PNG" SelfReg="false" NextFile="horizontalLine.PNG"/>
+    <ROW File="html.html" Component_="analytics.js" FileName="HTML--~1.HTM|html--.html" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\html--.html" SelfReg="false" NextFile="jsapi"/>
+    <ROW File="ic_check_black_48dp_2x.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CHE~2.PNG|ic_check_black_48dp_2x.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_check_black_48dp_2x.png" SelfReg="false" NextFile="ic_close_black_1024dp_2xmin.png"/>
+    <ROW File="ic_check_black_48dp_2xmin.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CHE~1.PNG|ic_check_black_48dp_2x-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_check_black_48dp_2x-min.png" SelfReg="false" NextFile="ic_check_black_48dp_2x.png"/>
+    <ROW File="ic_close_black_1024dp_2x.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CLO~2.PNG|ic_close_black_1024dp_2x.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_close_black_1024dp_2x.png" SelfReg="false" NextFile="ic_close_black_1024dp_2x1min.png"/>
+    <ROW File="ic_close_black_1024dp_2x1.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CLO~4.PNG|ic_close_black_1024dp_2x1.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_close_black_1024dp_2x1.png" SelfReg="false" NextFile="iphone6blackmin.png"/>
+    <ROW File="ic_close_black_1024dp_2x1min.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CLO~3.PNG|ic_close_black_1024dp_2x1-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_close_black_1024dp_2x1-min.png" SelfReg="false" NextFile="ic_close_black_1024dp_2x1.png"/>
+    <ROW File="ic_close_black_1024dp_2xmin.png" Component_="_computerdevicesresponsive.ico" FileName="IC_CLO~1.PNG|ic_close_black_1024dp_2x-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\ic_close_black_1024dp_2x-min.png" SelfReg="false" NextFile="ic_close_black_1024dp_2x.png"/>
+    <ROW File="idevice_id.exe" Component_="idevice_id.exe" FileName="IDEVI~17.EXE|idevice_id.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevice_id.exe" SelfReg="false" NextFile="iproxy.exe" DigSign="true"/>
+    <ROW File="idevice_id.exe_1" Component_="idevice_id.exe_1" FileName="IDEVI~17.EXE|idevice_id.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevice_id.exe" SelfReg="false" NextFile="iproxy.exe_1" DigSign="true"/>
+    <ROW File="idevicebackup.exe" Component_="idevicebackup.exe" FileName="IDEVIC~1.EXE|idevicebackup.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicebackup.exe" SelfReg="false" NextFile="idevicebackup2.exe" DigSign="true"/>
+    <ROW File="idevicebackup.exe_1" Component_="idevicebackup.exe_1" FileName="IDEVIC~1.EXE|idevicebackup.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicebackup.exe" SelfReg="false" NextFile="idevicebackup2.exe_1" DigSign="true"/>
+    <ROW File="idevicebackup2.exe" Component_="idevicebackup2.exe" FileName="IDEVIC~2.EXE|idevicebackup2.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicebackup2.exe" SelfReg="false" NextFile="idevicecrashreport.exe" DigSign="true"/>
+    <ROW File="idevicebackup2.exe_1" Component_="idevicebackup2.exe_1" FileName="IDEVIC~2.EXE|idevicebackup2.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicebackup2.exe" SelfReg="false" NextFile="idevicecrashreport.exe_1" DigSign="true"/>
+    <ROW File="idevicecrashreport.exe" Component_="idevicecrashreport.exe" FileName="IDEVIC~3.EXE|idevicecrashreport.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicecrashreport.exe" SelfReg="false" NextFile="idevicedate.exe" DigSign="true"/>
+    <ROW File="idevicecrashreport.exe_1" Component_="idevicecrashreport.exe_1" FileName="IDEVIC~3.EXE|idevicecrashreport.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicecrashreport.exe" SelfReg="false" NextFile="idevicedate.exe_1" DigSign="true"/>
+    <ROW File="idevicedate.exe" Component_="idevicedate.exe" FileName="IDEVIC~4.EXE|idevicedate.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicedate.exe" SelfReg="false" NextFile="idevicedebug.exe" DigSign="true"/>
+    <ROW File="idevicedate.exe_1" Component_="idevicedate.exe_1" FileName="IDEVIC~4.EXE|idevicedate.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicedate.exe" SelfReg="false" NextFile="idevicedebug.exe_1" DigSign="true"/>
+    <ROW File="idevicedebug.exe" Component_="idevicedebug.exe" FileName="IDEVIC~5.EXE|idevicedebug.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicedebug.exe" SelfReg="false" NextFile="idevicedebugserverproxy.exe" DigSign="true"/>
+    <ROW File="idevicedebug.exe_1" Component_="idevicedebug.exe_1" FileName="IDEVIC~5.EXE|idevicedebug.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicedebug.exe" SelfReg="false" NextFile="idevicedebugserverproxy.exe_1" DigSign="true"/>
+    <ROW File="idevicedebugserverproxy.exe" Component_="idevicedebugserverproxy.exe" FileName="IDEVIC~6.EXE|idevicedebugserverproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicedebugserverproxy.exe" SelfReg="false" NextFile="idevicediagnostics.exe" DigSign="true"/>
+    <ROW File="idevicedebugserverproxy.exe_1" Component_="idevicedebugserverproxy.exe_1" FileName="IDEVIC~6.EXE|idevicedebugserverproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicedebugserverproxy.exe" SelfReg="false" NextFile="idevicediagnostics.exe_1" DigSign="true"/>
+    <ROW File="idevicediagnostics.exe" Component_="idevicediagnostics.exe" FileName="IDEVIC~7.EXE|idevicediagnostics.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicediagnostics.exe" SelfReg="false" NextFile="ideviceenterrecovery.exe" DigSign="true"/>
+    <ROW File="idevicediagnostics.exe_1" Component_="idevicediagnostics.exe_1" FileName="IDEVIC~7.EXE|idevicediagnostics.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicediagnostics.exe" SelfReg="false" NextFile="ideviceenterrecovery.exe_1" DigSign="true"/>
+    <ROW File="ideviceenterrecovery.exe" Component_="ideviceenterrecovery.exe" FileName="IDEVIC~8.EXE|ideviceenterrecovery.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\ideviceenterrecovery.exe" SelfReg="false" NextFile="ideviceimagemounter.exe" DigSign="true"/>
+    <ROW File="ideviceenterrecovery.exe_1" Component_="ideviceenterrecovery.exe_1" FileName="IDEVIC~8.EXE|ideviceenterrecovery.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\ideviceenterrecovery.exe" SelfReg="false" NextFile="ideviceimagemounter.exe_1" DigSign="true"/>
+    <ROW File="ideviceimagemounter.exe" Component_="ideviceimagemounter.exe" FileName="IDEVIC~9.EXE|ideviceimagemounter.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\ideviceimagemounter.exe" SelfReg="false" NextFile="ideviceinfo.exe" DigSign="true"/>
+    <ROW File="ideviceimagemounter.exe_1" Component_="ideviceimagemounter.exe_1" FileName="IDEVIC~9.EXE|ideviceimagemounter.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\ideviceimagemounter.exe" SelfReg="false" NextFile="ideviceinfo.exe_1" DigSign="true"/>
+    <ROW File="ideviceinfo.exe" Component_="ideviceinfo.exe" FileName="IDEVI~10.EXE|ideviceinfo.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\ideviceinfo.exe" SelfReg="false" NextFile="idevicename.exe" DigSign="true"/>
+    <ROW File="ideviceinfo.exe_1" Component_="ideviceinfo.exe_1" FileName="IDEVI~10.EXE|ideviceinfo.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\ideviceinfo.exe" SelfReg="false" NextFile="idevicename.exe_1" DigSign="true"/>
+    <ROW File="idevicename.exe" Component_="idevicename.exe" FileName="IDEVI~11.EXE|idevicename.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicename.exe" SelfReg="false" NextFile="idevicenotificationproxy.exe" DigSign="true"/>
+    <ROW File="idevicename.exe_1" Component_="idevicename.exe_1" FileName="IDEVI~11.EXE|idevicename.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicename.exe" SelfReg="false" NextFile="idevicenotificationproxy.exe_1" DigSign="true"/>
+    <ROW File="idevicenotificationproxy.exe" Component_="idevicenotificationproxy.exe" FileName="IDEVI~12.EXE|idevicenotificationproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicenotificationproxy.exe" SelfReg="false" NextFile="idevicepair.exe" DigSign="true"/>
+    <ROW File="idevicenotificationproxy.exe_1" Component_="idevicenotificationproxy.exe_1" FileName="IDEVI~12.EXE|idevicenotificationproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicenotificationproxy.exe" SelfReg="false" NextFile="idevicepair.exe_1" DigSign="true"/>
+    <ROW File="idevicepair.exe" Component_="idevicepair.exe" FileName="IDEVI~13.EXE|idevicepair.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicepair.exe" SelfReg="false" NextFile="ideviceprovision.exe" DigSign="true"/>
+    <ROW File="idevicepair.exe_1" Component_="idevicepair.exe_1" FileName="IDEVI~13.EXE|idevicepair.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicepair.exe" SelfReg="false" NextFile="ideviceprovision.exe_1" DigSign="true"/>
+    <ROW File="ideviceprovision.exe" Component_="ideviceprovision.exe" FileName="IDEVI~14.EXE|ideviceprovision.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\ideviceprovision.exe" SelfReg="false" NextFile="idevicescreenshot.exe" DigSign="true"/>
+    <ROW File="ideviceprovision.exe_1" Component_="ideviceprovision.exe_1" FileName="IDEVI~14.EXE|ideviceprovision.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\ideviceprovision.exe" SelfReg="false" NextFile="idevicescreenshot.exe_1" DigSign="true"/>
+    <ROW File="idevicescreenshot.exe" Component_="idevicescreenshot.exe" FileName="IDEVI~15.EXE|idevicescreenshot.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicescreenshot.exe" SelfReg="false" NextFile="idevicesyslog.exe" DigSign="true"/>
+    <ROW File="idevicescreenshot.exe_1" Component_="idevicescreenshot.exe_1" FileName="IDEVI~15.EXE|idevicescreenshot.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicescreenshot.exe" SelfReg="false" NextFile="idevicesyslog.exe_1" DigSign="true"/>
+    <ROW File="idevicesyslog.exe" Component_="idevicesyslog.exe" FileName="IDEVI~16.EXE|idevicesyslog.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\idevicesyslog.exe" SelfReg="false" NextFile="idevice_id.exe" DigSign="true"/>
+    <ROW File="idevicesyslog.exe_1" Component_="idevicesyslog.exe_1" FileName="IDEVI~16.EXE|idevicesyslog.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\idevicesyslog.exe" SelfReg="false" NextFile="idevice_id.exe_1" DigSign="true"/>
+    <ROW File="iphone.png" Component_="_computerdevicesresponsive.ico" FileName="iphone.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone.png" SelfReg="false" NextFile="iphone6frontmin.png"/>
+    <ROW File="iphone6black.png" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~2.PNG|iphone-6-black.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone-6-black.png" SelfReg="false" NextFile="iphonemin.png"/>
+    <ROW File="iphone6blackmin.png" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~1.PNG|iphone-6-black-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone-6-black-min.png" SelfReg="false" NextFile="iphone6black.png"/>
+    <ROW File="iphone6front.png" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~5.PNG|iphone6front.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone6front.png" SelfReg="false" NextFile="iphone_connect.jpg"/>
+    <ROW File="iphone6frontmin.png" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~4.PNG|iphone6front-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone6front-min.png" SelfReg="false" NextFile="iphone6front.png"/>
+    <ROW File="iphone_connect.jpg" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~1.JPG|iphone_connect.jpg" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone_connect.jpg" SelfReg="false" NextFile="JavaScriptEvents.html"/>
+    <ROW File="iphonemin.png" Component_="_computerdevicesresponsive.ico" FileName="IPHONE~3.PNG|iphone-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\iphone-min.png" SelfReg="false" NextFile="iphone.png"/>
+    <ROW File="iproxy.exe" Component_="iproxy.exe" FileName="iproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\iproxy.exe" SelfReg="false" NextFile="plistutil.exe" DigSign="true"/>
+    <ROW File="iproxy.exe_1" Component_="iproxy.exe_1" FileName="iproxy.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\iproxy.exe" SelfReg="false" NextFile="plistutil.exe_1" DigSign="true"/>
+    <ROW File="jsapi" Component_="analytics.js" FileName="jsapi" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\jsapi" SelfReg="false" NextFile="lamp.jpg"/>
+    <ROW File="labelBlueJays.txt" Component_="bbmpTools.application" FileName="LABELB~1.TXT|labelBlueJays.txt" Attributes="0" SourcePath="shipping label c#\Debug\labelBlueJays.txt" SelfReg="false" NextFile="labelFreshNoIntegrityTemplate.txt"/>
+    <ROW File="labelFreshNoIntegrityTemplate.txt" Component_="bbmpTools.application" FileName="LABELF~1.TXT|labelFreshNoIntegrityTemplate.txt" Attributes="0" SourcePath="shipping label c#\Debug\labelFreshNoIntegrityTemplate.txt" SelfReg="false" NextFile="labelRMAFreshTemplate.txt"/>
+    <ROW File="labelRMAFreshTemplate.txt" Component_="bbmpTools.application" FileName="LABELR~1.TXT|labelRMAFreshTemplate.txt" Attributes="0" SourcePath="shipping label c#\Debug\labelRMAFreshTemplate.txt" SelfReg="false" NextFile="labelRMANoIntegrityTemplate.txt"/>
+    <ROW File="labelRMANoIntegrityTemplate.txt" Component_="bbmpTools.application" FileName="LABELR~2.TXT|labelRMANoIntegrityTemplate.txt" Attributes="0" SourcePath="shipping label c#\Debug\labelRMANoIntegrityTemplate.txt" SelfReg="false" NextFile="labelRTSTemplate.txt"/>
+    <ROW File="labelRTSTemplate.txt" Component_="bbmpTools.application" FileName="LABELR~3.TXT|labelRTSTemplate.txt" Attributes="0" SourcePath="shipping label c#\Debug\labelRTSTemplate.txt" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="lamp.jpg" Component_="analytics.js" FileName="lamp.jpg" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\lamp.jpg" SelfReg="false" NextFile="pubads_impl_79.js"/>
+    <ROW File="loading_spinner.gif" Component_="_computerdevicesresponsive.ico" FileName="LOADIN~1.GIF|loading_spinner.gif" Attributes="0" SourcePath="shipping label c#\Debug\Resources\loading_spinner.gif" SelfReg="false" NextFile="OK01.png"/>
+    <ROW File="pass.png" Component_="_computerdevicesresponsive.ico" FileName="pass.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\pass.png" SelfReg="false" NextFile="pinkmin.png"/>
+    <ROW File="passmin.png" Component_="_computerdevicesresponsive.ico" FileName="pass-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\pass-min.png" SelfReg="false" NextFile="pass.png"/>
+    <ROW File="pink.png" Component_="_computerdevicesresponsive.ico" FileName="pink.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\pink.png" SelfReg="false" NextFile="printoutline.png"/>
+    <ROW File="pinkmin.png" Component_="_computerdevicesresponsive.ico" FileName="pink-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\pink-min.png" SelfReg="false" NextFile="pink.png"/>
+    <ROW File="plistutil.exe" Component_="plistutil.exe" FileName="PLISTU~1.EXE|plistutil.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\deviceinfo\plistutil.exe" SelfReg="false" NextFile="execute.bat_1" DigSign="true"/>
+    <ROW File="plistutil.exe_1" Component_="plistutil.exe_1" FileName="PLISTU~1.EXE|plistutil.exe" Attributes="0" SourcePath="shipping label c#\Debug\Resources\deviceinfo\plistutil.exe" SelfReg="false" NextFile="EncoreLogo.png" DigSign="true"/>
+    <ROW File="printoutline.png" Component_="_computerdevicesresponsive.ico" FileName="PRINT-~1.PNG|print-outline.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\print-outline.png" SelfReg="false" NextFile="refreshmin.png"/>
+    <ROW File="pubads_impl_79.js" Component_="analytics.js" FileName="PUBADS~1.JS|pubads_impl_79.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\pubads_impl_79.js" SelfReg="false" NextFile="search_box_icon.png"/>
+    <ROW File="refresh.png" Component_="_computerdevicesresponsive.ico" FileName="refresh.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\refresh.png" SelfReg="false" NextFile="rsz_arrowright.png"/>
+    <ROW File="refreshmin.png" Component_="_computerdevicesresponsive.ico" FileName="REFRES~1.PNG|refresh-min.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\refresh-min.png" SelfReg="false" NextFile="refresh.png"/>
+    <ROW File="rsz_arrowright.png" Component_="_computerdevicesresponsive.ico" FileName="RSZ_AR~1.PNG|rsz_arrowright.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\rsz_arrowright.png" SelfReg="false" NextFile="scanmin.jpg"/>
+    <ROW File="scan.jpg" Component_="_computerdevicesresponsive.ico" FileName="scan.jpg" Attributes="0" SourcePath="shipping label c#\Debug\Resources\scan.jpg" SelfReg="false" NextFile="SCRAPmin.png"/>
+    <ROW File="scanmin.jpg" Component_="_computerdevicesresponsive.ico" FileName="scan-min.jpg" Attributes="0" SourcePath="shipping label c#\Debug\Resources\scan-min.jpg" SelfReg="false" NextFile="scan.jpg"/>
+    <ROW File="search_box_icon.png" Component_="analytics.js" FileName="SEARCH~1.PNG|search_box_icon.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\search_box_icon.png" SelfReg="false" NextFile="smalllogo.png"/>
+    <ROW File="smalllogo.png" Component_="analytics.js" FileName="SMALL-~1.PNG|small-logo.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\small-logo.png" SelfReg="false" NextFile="stdtheme.css"/>
+    <ROW File="stdtheme.css" Component_="analytics.js" FileName="stdtheme.css" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\stdtheme.css" SelfReg="false" NextFile="w3.css"/>
+    <ROW File="vertialLine.png" Component_="_computerdevicesresponsive.ico" FileName="VERTIA~1.PNG|vertialLine.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\vertialLine.png" SelfReg="false"/>
+    <ROW File="w3.css" Component_="analytics.js" FileName="w3.css" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\w3.css" SelfReg="false" NextFile="w3schools.png"/>
+    <ROW File="w3schools.png" Component_="analytics.js" FileName="W3SCHO~1.PNG|w3schools.png" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\w3schools.png" SelfReg="false" NextFile="w3schoolscom_gray.gif"/>
+    <ROW File="w3schools_footer.js" Component_="analytics.js" FileName="W3SCHO~1.JS|w3schools_footer.js" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\w3schools_footer.js" SelfReg="false" NextFile="loading_spinner.gif"/>
+    <ROW File="w3schoolscom_gray.gif" Component_="analytics.js" FileName="W3SCHO~1.GIF|w3schoolscom_gray.gif" Attributes="0" SourcePath="shipping label c#\Debug\Resources\JavaScript Events_files\w3schoolscom_gray.gif" SelfReg="false" NextFile="w3schools_footer.js"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="ShippingLabel_ic_material_product_icon_192pxcopy.exe" SourcePath="shipping label c#\Debug\Resources\Shipping Label_ic_material_product_icon_192px copy.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ShippingLabelBJ" Directory_="DesktopFolder" Name="SHIPPI~1|Shipping Label-BJ" Component_="bbmpTools.exe_1" Target="[#bbmpTools.exe_1]" Hotkey="0" Icon_="ShippingLabel_ic_material_product_icon_192pxcopy.exe" IconIndex="0" ShowCmd="1" WkDir="Debug_Dir"/>
+    <ROW Shortcut="ShippingLabelBJ_1" Directory_="StartMenuFolder" Name="SHIPPI~1|Shipping Label-BJ" Component_="bbmpTools.exe_1" Target="[#bbmpTools.exe_1]" Hotkey="0" Icon_="ShippingLabel_ic_material_product_icon_192pxcopy.exe" IconIndex="0" ShowCmd="1" WkDir="Debug_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
